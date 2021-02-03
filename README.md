@@ -1,0 +1,6 @@
+- Download data from https://drive.google.com/file/d/1Amh8Tp3rM0kdThJ0Idd88FlGRmuwaK6o/view
+- Install coccoc-tokenizer https://github.com/coccoc/coccoc-tokenizer
+- Run `$ mpic++ -O2 -std=c++17 search.cpp -o search`
+- Run `$ mpic++ -O2 -std=c++17 split.cpp -o split`
+- Run `$ mkdir articles && zcat | ./split `
+- Run `$ mpirun -np 3 ./a.out ./articles 100000 <queries.txt`
