@@ -3,4 +3,4 @@
 - Run `$ mpic++ -O2 -std=c++17 search.cpp -o search`
 - Run `$ mpic++ -O2 -std=c++17 split.cpp -o split`
 - Run `$ mkdir articles && zcat vi_wiki_all.gz | ./split `
-- Run `$ mpirun -np 3 ./a.out ./articles 100000 <queries.txt`
+- Run `$ mpirun -np 3 ./search ./articles 100000 <queries.txt`
